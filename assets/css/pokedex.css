@@ -163,3 +163,105 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+/* Estilização da lista geral */
+.pokemons {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Layout responsivo */
+    gap: 20px;
+    padding: 0;
+}
+
+/* Cartão principal */
+.pokemon-card {
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header com cor dinâmica */
+.pokemon-header {
+    text-align: center;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.pokemon-header span {
+    font-size: 1rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Imagem do Pokémon */
+.pokemon-card img {
+    width: 120px;
+    display: block;
+    margin: -40px auto 10px; /* Sobreposição com o header */
+    z-index: 10;
+    position: relative;
+}
+
+/* Detalhes do Pokémon */
+.pokemon-details {
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Navegação dos botões */
+.pokemon-details nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    border: none;
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-button.active {
+    color: #333;
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Barras de progresso (Base Stats) */
+.tab-content p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.stat-bar {
+    height: 8px;
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: #76c7c0; /* Cor das barras */
+}

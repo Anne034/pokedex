@@ -45,3 +45,16 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const parent = button.closest('.pokemon-details');
+        const tabContent = parent.querySelectorAll('.tab-content');
+        const buttons = parent.querySelectorAll('.tab-button');
+
+        buttons.forEach(btn => btn.classList.remove('active'));
+        tabContent.forEach(content => content.classList.remove('active'));
+
+        button.classList.add('active');
+        parent.querySelector(`#${button.dataset.tab}`).classList.add('active');
+    });
+});
