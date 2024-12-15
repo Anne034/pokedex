@@ -239,11 +239,6 @@
     transition: all 0.3s;
 }
 
-.tab-button.active {
-    color: #333;
-    border-bottom: 2px solid #ff6f61;
-}
-
 /* Barras de progresso (Base Stats) */
 .tab-content p {
     display: flex;

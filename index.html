@@ -26,50 +26,43 @@
     <section class="content">
         <h1>Pokedex</h1>
 
-        <ol id="pokemonList" class="pokemons">
+        <ol id="pokemonInfo" class="pokemons">
             <li class="pokemon-card">
-                <div class="pokemon-header" style="background-color: #78C850;">
-                    <h2>Bulbasaur</h2>
-                    <span>#001</span>
+                <div class="pokemon fire pokemon-header">
+                    <h2 class="name" id="pokemonName">Bulbasaur</h2>
+                    <span id="pokemonId">#001</span>
                 </div>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+            </br>
+            </br>
+            </br>
+                <img id="pokemonImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
                 <div class="pokemon-details">
                     <nav>
                         <button class="tab-button active" data-tab="about">About</button>
                         <button class="tab-button" data-tab="stats">Base Stats</button>
                     </nav>
+
                     <div class="tab-content active" id="about">
-                        <p><strong>Species:</strong> Seed</p>
-                        <p><strong>Height:</strong> 0.7 m</p>
-                        <p><strong>Weight:</strong> 6.9 kg</p>
-                        <p><strong>Abilities:</strong> Overgrow, Chlorophyll</p>
+                        <p id="pokemonTypes"><strong>Types:</strong> Grass, Poison</p>
+                        <p id="pokemonHeight"><strong>Height:</strong> 0.7 m</p>
+                        <p id="pokemonWeight"><strong>Weight:</strong> 6.9 kg</p>
+                        <p id="pokemonAbilities"><strong>Abilities:</strong> Overgrow, Chlorophyll</p>
                     </div>
-                </div>
-            </li>
-        
-            <li class="pokemon-card">
-                <div class="pokemon-header" style="background-color: #F08030;">
-                    <h2>Charmander</h2>
-                    <span>#004</span>
-                </div>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
-                <div class="pokemon-details">
-                    <nav>
-                        <button class="tab-button active" data-tab="about">About</button>
-                        <button class="tab-button" data-tab="stats">Base Stats</button>
-                    </nav>
+
                     <div class="tab-content" id="stats">
-                        <p><strong>HP:</strong> 39</p>
-                        <p><strong>Attack:</strong> 52</p>
-                        <p><strong>Defense:</strong> 43</p>
-                        <p><strong>Special Attack:</strong> 60</p>
-                        <p><strong>Special Defense:</strong> 50</p>
-                        <p><strong>Speed:</strong> 65</p>
-                        <p><strong>Total:</strong> 309</p>
-                    </div>
+                        <p id="pokemonHp"><strong>HP:</strong> 39</p>
+                        <p id="pokemonAttack"><strong>Attack:</strong> 52</p>
+                        <p id="pokemonDefense"><strong>Defense:</strong> 43</p>
+                        <p id="pokemonSpecialAttack"><strong>Special Attack:</strong> 60</p>
+                        <p id="pokemonSpecialDefense"><strong>Special Defense:</strong> 50</p>
+                        <p id="pokemonSpeed"><strong>Speed:</strong> 65</p>
+                        <p id="pokemonTotal"><strong>Total:</strong> 309</p>
+                    </div>                    
                 </div>
-            </li>
+            </li>                
         </ol>
+
+        <ol id="pokemonList" class="pokemons"></ol>
     
         <div class="pagination">
             <button id="loadMoreButton" type="button">

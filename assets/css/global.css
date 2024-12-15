@@ -22,3 +22,15 @@ body {
         border-radius: 1rem;
     }
 }
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button.active {
+    background-color: #ddd;
+}
